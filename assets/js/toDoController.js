@@ -4,9 +4,9 @@ angular.module('toDoApp', [])
 function ToDoController() {
         this.tasks = [];
         this.add = function() {
-            $scope.tasks.push(this.title);
+            this.tasks.push(this.title);
         }
-        $scope.delete = function() {
-            $scope.tasks.splice(this.$index, 1);
+        this.delete = function() {
+            this.tasks.splice(this.$index, 1);
         }
     }
