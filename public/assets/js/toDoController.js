@@ -1,12 +1,17 @@
 angular.module('toDoApp', [])
     .controller('toDoController', ToDoController);
 	
-function ToDoController() {
-        this.tasks = [];
-        this.add = function() {
+class ToDoController() {
+        public tasks = [];
+
+        constructor() {
+              console.log(123);
+        }
+
+        add() {
             this.tasks.push(this.title);
         }
-        this.delete = function() {
+        delete() {
             this.tasks.splice(this.$index, 1);
         }
     }

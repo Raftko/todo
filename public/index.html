@@ -1,0 +1,23 @@
+<!doctype html>
+
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+
+  <title>NewLife ToDo List</title>
+  <meta name="description" content="To do list on Angular">
+  <meta name="author" content="Alezey Zabolotnij">
+
+  <link rel="stylesheet" href="assets/css/styles.css?v=1.0">
+</head>
+
+<body ng-app="toDoApp" ng-controller="toDoController as mainCtl">
+  <form ng-submit="mainCtl.add()">
+  <input ng-model="title"><button>Добавить задачу</button>
+  </form>
+  <ul>
+    <li ng-repeat="task in tasks track by $index">{{ task }} <button ng-click="mainCtl.delete()">x</button></li>
+  </ul>
+  <script src="/assets/js/app.bundle.js"></script>
+</body>
+</html>

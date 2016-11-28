@@ -4,6 +4,9 @@ module.exports = {
         path: './assets/js/',
         filename: 'app.bundle.js',
 },
+devServer: {
+        inline: true
+},
 	 module: {
 		loaders: [
 			{
