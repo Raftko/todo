@@ -1,7 +1,26 @@
-angular.module('toDoApp', [])
-    .controller('toDoController', ToDoController);
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+
+@NgModule({
+    imports: [
+        BrowserModule,
+    ],
+    declarations: [
+		ToDoComponent
+    ],
+    providers: [
+    ]
+})
+export class AppModule {
+}
+
+
 	
-class ToDoController{
+@Component({
+  selector: 'to-do',
+  template: '....'
+})
+class ToDoComponent{
         public tasks = [];
 
         constructor() {
@@ -9,7 +28,7 @@ class ToDoController{
         }
 
         add() {
-			console.log(123);
+   console.log(123);
             this.tasks.push(this.title);
         }
         deletew() {
