@@ -1,4 +1,4 @@
-import {NgModule} from '@angular/core';
+import {NgModule, Component} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
 @NgModule({
@@ -18,7 +18,7 @@ export class AppModule {
 	
 @Component({
   selector: 'to-do',
-  template: '....'
+  templateUrl: '/public/index.html'
 })
 class ToDoComponent{
         public tasks = [];
