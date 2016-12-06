@@ -16,7 +16,7 @@
   <input ng-model="title"><button>Добавить задачу</button>
   </form>
   <ul>
-    <li ng-repeat="task in tasks track by $index">{{ task }} <button ng-click="mainCtl.delete()">x</button></li>
+    <li ng-repeat="task in mainCtl.tasks track by $index">{{ task }} <button ng-click="mainCtl.delete()">x</button></li>
   </ul>
   <script src="/assets/js/app.bundle.js"></script>
 </body>
