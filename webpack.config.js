@@ -1,7 +1,9 @@
+const webpack = require("webpack");
+
 module.exports = {
-    entry: './src/app.js',
+    entry: './src/app.ts',
     output: {
-        path: './assets/js/',
+        path: '/public/',
         filename: 'app.bundle.js',
 },
 devServer: {
@@ -19,5 +21,10 @@ devServer: {
 				loader: 'ts-loader' 
 			}
 		]
-	}
+	},
+	plugins: [
+		new webpack.ProvidePlugin({
+		  Reflect: 'core-js/es7/reflect'
+		})
+	]
 }
