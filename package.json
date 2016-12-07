@@ -10,6 +10,7 @@
     "@angular/forms": "^2.2.4",
     "@angular/platform-browser": "^2.2.4",
     "@angular/platform-browser-dynamic": "^2.2.4",
+    "@types/core-js": "^0.9.35",
     "@types/node": "0.0.2",
     "babel-core": "^6.0.0",
     "babel-loader": "^6.2.8",
